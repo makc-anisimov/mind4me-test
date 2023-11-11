@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Max Anisimov">
+  <meta name="description" content="Тестовое задание для Mind4.me by Max Anisimov">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Тестовое задание для Mind4.me</title>
+</head>
+
+<body class="root">
+  <video autoplay muted loop class="bg-video">
+    <source src="./src/first-screen.mp4" type="video/mp4">
+  </video>
+  <form class="form">
+    <h1 class="form__title">Please login</h1>
+    <p class="form__input-title">E-mail</p>
+    <input class="form__input-field" id="email" type="email" placeholder="Enter E-mail">
+    <p class="form__input-title">Password</p>
+    <input class="form__input-field" id="password" type="password" placeholder="Enter Password">
+    <button class="link form__button-submit" type="submit">Login</button>
+    <div class="form__separator">
+      <hr class="form__separator-line">
+      <p class="form__separator-text">or</p>
+      <hr class="form__separator-line">
+    </div>
+    <a class="link form__button-link">sign up</a>
+    <p class="form__footer-text">Forget password? <a class="link form__footer-link">Restore</a></p>
+  </form>
+</body>
+
+</html>
