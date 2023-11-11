@@ -9,12 +9,19 @@
   cursor: pointer;
 }
 
+.root {
+  /* min-height: 800px; */
+  height: auto;
+
+}
 .bg-video {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  /* bottom: 0; */
+  /* right: 0; */
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   z-index: -1;
 }
@@ -88,7 +95,7 @@
   font-family: Suisse Intl;
   font-size: 14px;
   font-style: normal;
-  font-weight: 1600;
+  font-weight: 600;
   line-height: 21px;
   letter-spacing: 0.7px;
   text-transform: uppercase;
@@ -155,6 +162,66 @@
 
 @media screen and (max-width: 750px) {
   .form {
-    width: calc(100% - 120px);
+    width: calc(100% - 60px);
+  margin: 78px auto 25px;
+  min-height: 330px;
+
+  }
+
+  .form__title {
+    margin: 30px auto 14px;
+    width: calc(100% - 60px);
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .form__input-title {
+    width: calc(100% - 60px);
+    font-size: 12px;
+  }
+
+  .form__input-field {
+    font-size: 14px;
+    width: calc(100% - 92px);
+  padding: 12px;
+
+  }
+
+  .form__button-submit {
+    margin: 20px auto 0;
+    width: calc(100% - 60px);
+    height: 40px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .form__separator {
+    margin: 15px auto 0;
+    width: calc(100% - 60px);
+  }
+  
+  .form__separator-line {
+    width: calc((100% - 88px)/2);
+  }
+  
+  .form__separator-text {
+    margin: 0 33px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .form__button-link {
+    border-radius: 10px;
+    width: calc(100% - 60px);
+    height: 40px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .form__footer-text {
+    width: calc(100% - 60px);
+    margin: 16px auto 40px;
+    font-size: 12px;
+    line-height: 150%;
   }
 }
